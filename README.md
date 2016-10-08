@@ -3,6 +3,11 @@
 More info at:
 http://www.lynckia.com/licode
 
+# nuve_client_csharp version
+I added the cs version for nuve server api ,you can find it in 
+licode/nuve/,Maybe it could help you! Click Star Please!
+中文版说明
+我写了一个c# 版本的server api类，可以完整的调用跟他版本一样的功能，你进入目录加到自己的项目里面就可以用了，如果觉得有帮助，给我星星
 ## License
 
 The MIT License
