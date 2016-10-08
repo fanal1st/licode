@@ -192,7 +192,9 @@ namespace LicodeNavyClient
             HMACSHA1 hmac = new HMACSHA1(keyBytes);
             byte[] hashBytes = hmac.ComputeHash(inputBytes);
             var hexstr=BitConverter.ToString(hashBytes);
-            return TextManager.StrToBase64StringWithEncoding(hexstr.Replace("-", "").ToLower(),Encoding.ASCII);
+            Byte[] bts = Encoding.ASCII.GetBytes(hexstr);
+            string innerstr = Convert.ToBase64String(bts);
+            return innerstr;
         }
 
 
